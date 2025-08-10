@@ -1,0 +1,298 @@
+echo "# gustavol3" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Gustavoengdev/gustavol3.git
+git push -u origin main
+
+// Iniciante na ciência da computação, esse é meu primeiro Readme mostrando meus primeiros projetos e aprendizados, trabalho com engenharia há 8 anos, quero novos conhecimentos na programação.
+
+// Esse trata-se de códigos iniciais no javascript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function testefunçao() {
+  console.log("Testando o que eu chamaria de msgbox no vba")
+}
+
+function testandovariaveis() {
+var um = 5
+var dois = 3
+
+var gustavoteste = um + dois
+
+console.log(gustavoteste)
+}
+
+function lertestecontas() {
+
+var a = 1
+var b = 2
+
+
+a++;
+b--;
+Logger.log("vamos fazer um teste " + (a + b)); //quero entender pra que serve essa merda
+}
+
+function aprendendoseesenao() {
+var g = 15
+var numerov = 10
+if (g>numerov){
+  Logger.log("sim, g maior que " + numerov + " ta?")
+} else{Logger.log("Não é maior que "+numerov + " ta?")}
+}
+
+function testetexto(){
+var gugu = "hehe"
+var txtver = "hehfe"
+
+if(gugu == txtver){
+  Logger.log("é igual o hehe ta?")
+} else{Logger.log("não é igual hehe ta?")}
+
+
+}
+
+listaname = ["Gustavo", "Bola","beiço"]
+
+function testelista(){
+
+
+Logger.log(listaname)
+listaname.push("teta")
+Logger.log(listaname)
+Logger.log(listaname[0])
+listaname.pop()
+Logger.log(listaname)
+}
+
+listaname = ["Gustavo", "Bola","beiço"]
+
+function busquename(){
+
+buscanome = "Bolf"
+
+if (listaname.includes(buscanome)){ //Includes é pra ver o que esta incluso
+  Logger.log("tem esse nome sim")
+} else{Logger.log("esquece, não tem beleza?")}
+}
+
+
+names = ["Maria","Elaine","Amanda"]
+
+function loppingforinicio () {
+for(var bsq = 0; bsq < names.length;bsq++)
+Logger.log("imprimindo," + names[bsq])
+
+}
+
+function Testewhilegugu(){
+gu = 1
+to = 3
+
+
+while(gu=to && gu<1){Logger.log("conta até 10 danado")}
+ 
+
+}
+
+function exerfor(){
+
+numeros = 10
+
+
+for(var contar = 0;contar<numeros;contar++){
+
+// você coloca dentro do for, a váriavel que tem que ser DECLARADA dentro, a condição e uma opção ++ pra ele fazer um pequeno looping
+
+
+Logger.log(numeros[contar-1])}
+
+}
+
+var contar = 0
+var final = 10
+function whileexc(){
+
+var i = 0
+
+// essa merda deu ruim, depois assisto a aula denovo :@
+// acertamos, você joga um critério, depois um Logger dentro com a variável do critério, tipo se for inicio e fim, vc coloca dentro o do inicio, depois coloca um ++ numa variável pra ele não ficar num looping infinito
+
+
+
+
+while(contar<=final){Logger.log(contar)
+contar++
+
+}}
+
+function testandowhilediferentecomnomes () {
+n = 0
+nomelista = ["Cláudio", "Pai Haroldo","VÔ Osvaldo", "TIOJ"]
+
+while (n<nomelista.length){
+Logger.log(nomelista[n])
+n++
+//aeee caramba, não foge muito do vba não, você tem que definir na impressão se você vai querer algum parametro do calculo tanto no for quanto no while
+}
+}
+
+
+function testandoforsozinho(){
+nomelista = ['Cláudio', 'Pai Haroldo','VÔ Osvaldo', 'TIOJ'] 
+
+for(var i = 0;i < nomelista.length; i++){
+
+Logger.log(nomelista[i])
+//Ficou top cara, vc devia estar escrevendo length errado sabia?
+}
+}
+
+//depois tenho que entender quando vou usar o for, e quando usar while, sei que for é = até, e while é enquanto, mas nos exemplos que vi, meio que diferente mas os 2 fazem a mesma coisa.
+//resp.: Em geral, usa-se o laço for quando se conhece o número de iterações antecipadamente, e o laço while quando o número de iterações é desconhecido e depende de uma condição ser verdadeira. 
+
+
+//array = tuplas no python
+
+
+function pratiquelista(){
+
+lisname = ["Gustavo","Cláudio"]
+
+lisname.push("Haroldo")
+lisname.push ("Ricardo")[
+lisname.push("Rodrigo")
+]
+
+Logger.log(lisname)
+
+if (lisname.includes("Gustavo")){Logger.log ("hehe tem GUGU")}
+else{Logger.log("não tem GUGU")}
+}
+
+
+
+
+
+
+
+
+
+  var Spreadsheetid = '1PP_ZDyhY-mXoKSk-BCcSAgdhRnHM75AMxkrFgsdonXE'
+  var Sheetname = 'Pagone'
+  
+
+function lersheethehe() {
+  
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+
+  Logger.log(Sheet)
+
+  var Data = Sheet.getDataRange().getValues()
+
+  Logger.log(Data)
+
+
+}
+function escrevernasheet(){
+
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+
+var i = 1
+
+while(i<=10){Sheet.getRange(i, 1).setValue("testando " + i)
+i++}
+
+}
+
+function tstguguwrite() {
+
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+var gu = Sheet.getRange("H1").getValue() 
+
+// UOU, o cara faz a gente sofrer no GET range, mas ele aceita o nome da célula todinha igual no vba hehe
+
+
+if (gu==10){
+  Sheet.getRange(1, 2).setValue("Gu=10, Bateu certinho")} 
+    else {Sheet.getRange(1, 2).setValue("Não é  igual a 10 ok?")}
+
+  
+}
+
+function testeforwrite(){
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+  
+  
+
+  for(var g = 1;g<=10;g++){Sheet.getRange(g, 4).setValue("Testando Função FOR "+g)}
+
+
+}
+
+
+function limpatudo(){
+
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+
+var dados =  Sheet.getDataRange()
+dados.clearContent()
+
+
+}
+
+function ifincludesteste(){
+
+Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+
+namelist = ['caico',"bola", "teta"]
+namelist.push("beiço","Ricardo","Haroldo","Cláudio","Rafael","Gerson","Alexandre")
+namelist.push (Sheet.getRange("h27").getValue())
+var pegarvalor = Sheet.getRange("I1").getValue()
+if (namelist = namelist.includes(pegarvalor)){Sheet.getRange("i2").setValue("Esse nome tem viu Gustavo na tupla da programação")}
+else{Sheet.getRange("i2").setValue("Não tem esse nome na listas dos caras viu")}
+
+}
+
+function tentandopintaressamerda(){
+
+
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname) //acho que não pegou ontem por bug do gas
+
+Sheet.getRange("a1:b2").setBackground("pink").setFontColor("green").setBorder(true,true, true, true,true,true,"black",SpreadsheetApp.BorderStyle.SOLID)
+
+
+
+
+
+}
+
+function tentdenovopint(){
+
+var Sheet = SpreadsheetApp.openById(Spreadsheetid).getSheetByName(Sheetname)
+var rg = Sheet.getRange("g2")
+rg.setBackground("green")
+
+// parabéns, mas as vezes compensa ao inves de declarar a váriavel, fazer o código grande de primeira mesmo, tipo um sheet.getrange. set o que vc quiser formatar
+
+
+
+}
+
+
+
